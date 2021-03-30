@@ -3,6 +3,22 @@
 <head>
   <title>나</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:blue;
+      text-decoration: none;
+    }
+    #active {
+      color:red;
+    }
+    .saw {
+      color:gray;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PH79D5Z8F"></script>
 <script>
@@ -14,12 +30,20 @@
 </script>
 </head>
 <body>
-  <h1><a href="index.html">나</a></h1>
+  <h1><a href="index.html">나</a></h1> <!-- style="color:blue" -->
   <ol>
-    <li><a href="1.html">마음가짐</a></li>
-    <li><a href="2.html">해야할 것</a></li>
+    <li><a href="1.html" class="saw">마음가짐</a></li>
+    <li><a href="2.html" class="saw" id="active">해야할 것</a></li>
     <li><a href="3.html">하고싶은 것</a></li>
   </ol>
+  <!--
+  <h1><a href="index.html"><font color="blue">나</font></a></h1>
+  <ol>
+    <li><a href="1.html"><font color="blue">마음가짐</font></a></li>
+    <li><a href="2.html"><font color="blue">해야할 것</font></a></li>
+    <li><a href="3.html"><font color="blue">하고싶은 것</font></a></li>
+  </ol>
+  -->
   <h2>나</h2>
   <p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
