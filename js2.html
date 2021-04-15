@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>해야할 것</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="jsweb.html">나</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+    <ol>
+      <li><a href="js1.html">마음가짐</a></li>
+      <li><a href="js2.html">해야할 것</a></li>
+      <li><a href="js3.html">하고싶은 것</a></li>
+    </ol>
+        <h2>해야할 것</h2>
+        <p>
+          <ol>
+            <li>토익 800점이상 달성.</li>
+            <li>프로그래밍 관련 공부 꾸준히 하기.</li>
+            <li>졸업논문 작성하기.</li>
+          </ol>
+        </p>
+        <input type="button" value="night" onclick="
+          if(this.value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            this.value = 'day';
+          } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            this.value = 'night'
+          }
+        ">
+</body>
+</html>

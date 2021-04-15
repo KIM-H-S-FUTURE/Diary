@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>마음가짐</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="jsweb.html">나</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+    <ol>
+      <li><a href="js1.html">마음가짐</a></li>
+      <li><a href="js2.html">해야할 것</a></li>
+      <li><a href="js3.html">하고싶은 것</a></li>
+    </ol>
+        <h2>마음가짐</h2>
+        <p>
+          <ol>
+            <li><strong><u><a href="https://ko.dict.naver.com/#/search?query=%EC%8B%A0%EB%85%90" target="_blank" title="신념의 뜻">신념</a></u></strong>을 가지고 <strong>노력</strong>과 <strong>끈기</strong>를 지니자.<img src="belief.jpg" width="70%"></li>
+            <li><strong>향상심</strong>을 가지자.</li>
+            <li>끊임없는 싸움에서 포기하지 말자.<br>끝까지 물고 늘어지자.</li>
+          </ol>
+        </p>
+        <input type="button" value="night" onclick="
+          if(this.value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            this.value = 'day';
+          } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            this.value = 'night'
+          }
+        ">
+</body>
+</html>
